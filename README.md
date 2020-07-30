@@ -20,7 +20,9 @@ Always be aware of that there is a monster wandering around the room and try to 
 Now you can go and have fun!
 
 ---
-| It's you | ![](https://i.imgur.com/OoHA8x0.png) |
-| Light source | ![](https://i.imgur.com/K8z7zwp.png) |
-| Monster | ![](https://i.imgur.com/hciMCn4.png) |
-| Locked door | ![](https://i.imgur.com/lajty1o.png) |
+| - | - |
+| - | - |
+| It's you | <img src="https://i.imgur.com/OoHA8x0.png" width="200%"> |
+| Light source | <img src="https://i.imgur.com/K8z7zwp.png" width="200%"> |
+| Monster | <img src="https://i.imgur.com/hciMCn4.png" width="200%"> |
+| Locked door | <img src="https://i.imgur.com/lajty1o.png" width="200%"> |
