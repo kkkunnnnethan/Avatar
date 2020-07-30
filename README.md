@@ -4,7 +4,23 @@
 
 ---
 
-## UI
+##### UI
 
 ![Imgur](https://i.imgur.com/IMe4fvv.png)
 ![Imgur](https://i.imgur.com/AGx4I6a.png)
+
+##### How to play it
+
+Firstly, you are locked in a dark room full of alley, and you have to find the door to get your way out.
+<br/>
+You can either try to find the door directly without light source or walk around and find the light source first to get a better view.
+<br/>
+Always be aware of that there is a monster wandering around the room and try to catch you.
+<br/>
+Now you can go and have fun!
+
+---
+| It's you | ![](https://i.imgur.com/OoHA8x0.png) |
+| Light source | ![](https://i.imgur.com/K8z7zwp.png) |
+| Monster | ![](https://i.imgur.com/hciMCn4.png) |
+| Locked door | ![](https://i.imgur.com/lajty1o.png) |
