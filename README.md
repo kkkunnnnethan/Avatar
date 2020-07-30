@@ -23,6 +23,6 @@ Now you can go and have fun!
 | - | - |
 | - | - |
 | It's you | <img src="https://i.imgur.com/OoHA8x0.png" height="400%"> |
-| Light source | <img src="https://i.imgur.com/K8z7zwp.png" width="400%"> |
-| Monster | <img src="https://i.imgur.com/hciMCn4.png" width="400%"> |
-| Locked door | <img src="https://i.imgur.com/lajty1o.png" width="400%"> |
+| Light source | <img src="https://i.imgur.com/K8z7zwp.png" height="400%"> |
+| Monster | <img src="https://i.imgur.com/hciMCn4.png" height="400%"> |
+| Locked door | <img src="https://i.imgur.com/lajty1o.png" height="400%"> |
