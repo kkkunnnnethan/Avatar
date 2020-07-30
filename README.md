@@ -1,15 +1,15 @@
 # Avatar
 
-##### final project from [CS 61B Data Structures, Spring 2019](https://sp19.datastructur.es)
+### final project from [CS 61B Data Structures, Spring 2019](https://sp19.datastructur.es)
 
 ---
 
-##### UI
+### UI
 
 ![Imgur](https://i.imgur.com/IMe4fvv.png)
 ![Imgur](https://i.imgur.com/AGx4I6a.png)
 
-##### How to play it
+### How to play it
 
 Firstly, you are locked in a dark room full of alley, and you have to find the door to get your way out.
 <br/>
@@ -22,7 +22,7 @@ Now you can go and have fun!
 ---
 | - | - |
 | - | - |
-| It's you | <img src="https://i.imgur.com/OoHA8x0.png" width="200%"> |
-| Light source | <img src="https://i.imgur.com/K8z7zwp.png" width="200%"> |
-| Monster | <img src="https://i.imgur.com/hciMCn4.png" width="200%"> |
-| Locked door | <img src="https://i.imgur.com/lajty1o.png" width="200%"> |
+| It's you | <img src="https://i.imgur.com/OoHA8x0.png" width="400%"> |
+| Light source | <img src="https://i.imgur.com/K8z7zwp.png" width="400%"> |
+| Monster | <img src="https://i.imgur.com/hciMCn4.png" width="400%"> |
+| Locked door | <img src="https://i.imgur.com/lajty1o.png" width="400%"> |
