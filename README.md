@@ -11,7 +11,7 @@
 
 ### How to play it
 
-In the beginning, you are locked in a dark room full of alley, and you have to find the door to get your way out.
+In the beginning, you are locked in a dark room full of alleys. You have to find the door and get your way out.
 <br/>
 You can either try to find the door directly without light source or walk around and find the light source first to get a better view.
 <br/>
