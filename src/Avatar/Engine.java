@@ -143,6 +143,7 @@ public class Engine {
             }
             if (inputKey == 's') {
                 Animation.setMove(Animation.Movement.NONE);
+                record.append(inputKey);
                 start();
                 return;
             }
