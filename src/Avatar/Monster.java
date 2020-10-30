@@ -1,6 +1,6 @@
 package Avatar;
 
-import DataStructure.AStarSolver;
+import DataStructure.AStar;
 import DataStructure.Graph;
 import TileEngine.TETile;
 import TileEngine.Tileset;
@@ -38,7 +38,14 @@ public class Monster extends Creature {
     }
 
     public void hunt() {
-        List<Point> shortestPath = new AStarSolver(floor, new Point(monsX, monsY), new Point(currX, currY), 100).solution();
+        TETile temp = world[monsX][monsY];
+        if (temp.equals(Animation.AVATAR_U0) || temp.equals(Animation.AVATAR_D0)
+                || temp.equals(Animation.AVATAR_L0) || temp.equals(Animation.AVATAR_R0)) {
+            Engine.gameover = true;
+            return;
+        }
+
+        List<Point> shortestPath = new AStar(floor, new Point(monsX, monsY), new Point(currX, currY), 100).solution();
         Point nearest = new Point((int) shortestPath.get(1).getX(), (int) shortestPath.get(1).getY());
 
             Point up = new Point(monsX, monsY + 1);

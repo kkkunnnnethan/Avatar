@@ -14,6 +14,7 @@ import static Avatar.Avatar.currY;
 
 public class Engine {
     TERenderer ter = new TERenderer();
+
     /* Feel free to change the width and height. */
     public static TETile[][] world = null;
     public static final int WIDTH = 80;
@@ -74,6 +75,7 @@ public class Engine {
             if (inputKey == 'n') {
                 continue;
             }
+            System.out.println(inputKey);
             takeAction(inputKey);
         }
         record.append(input);
@@ -84,7 +86,7 @@ public class Engine {
      * Method used for exploring a fresh world. This method should handle all inputs,
      * including inputs from the main menu.
      */
-    public void interactWithKeyboard() {
+    public boolean interactWithKeyboard() {
         drawBackground();
         drawMenu();
 
@@ -108,20 +110,44 @@ public class Engine {
             Font font = new Font("Monaco", Font.BOLD, 40);
             StdDraw.setFont(font);
             StdDraw.text(WIDTH * 0.5, HEIGHT - 12, "You win");
+            StdDraw.text(WIDTH * 0.5, HEIGHT - 18, "Press 'r' to return to menu or 'q' to quit");
             StdDraw.show();
+
+            while (true) {
+                if (getNextKey() == 'r') {
+                    Animation.setMove(Animation.Movement.FALSE);
+                    init();
+                    return true;
+                } else if (getNextKey() == 'q') {
+                    return false;
+                }
+            }
         } else {
             StdDraw.clear(Color.BLACK);
             StdDraw.setPenColor(Color.RED);
             Font font = new Font("Monaco", Font.BOLD, 40);
             StdDraw.setFont(font);
             StdDraw.text(WIDTH * 0.5, HEIGHT - 12, "You lose");
+            StdDraw.text(WIDTH * 0.5, HEIGHT - 18, "Press 'r' to return to menu or 'q' to quit");
             StdDraw.show();
+
+            while (true) {
+                if (getNextKey() == 'r') {
+                    Animation.setMove(Animation.Movement.FALSE);
+                    init();
+                    return true;
+                } else if (getNextKey() == 'q') {
+                    return false;
+                }
+            }
         }
     }
 
     public void takeAction(char inputKey) {
-
         if (Animation.move.equals(Animation.Movement.FALSE)) {
+            if (inputKey != 'n' && inputKey != 'q' && inputKey != 'l' && inputKey != 's') {
+                takeAction(getNextKey());
+            }
             if (inputKey == 'n') {
                 StdDraw.text(WIDTH * 0.5, HEIGHT - 22, "Enter Seed");
                 StdDraw.show();
@@ -129,9 +155,12 @@ public class Engine {
                 String s = "";
                 while (true) {
                     char c = getNextKey();
-                    if (!String.valueOf(c).matches("^[0-9]+$")) {
+                    if (c == 's') {
                         inputKey = c;
                         break;
+                    }
+                    if (!String.valueOf(c).matches("^[0-9]+$")) {
+                        continue;
                     }
                     s = s + c;
                     drawSeed(s);
@@ -215,6 +244,15 @@ public class Engine {
         } else {
             ter.renderFrame(world);
         }
+    }
+
+    public void init() {
+        world = null;
+        seed = null;
+        gameover = false;
+        dark = true;
+        win = false;
+        record = null;
     }
 
     //--------------helper---------------

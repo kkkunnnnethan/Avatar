@@ -75,6 +75,7 @@ public class ArrayHeapMinPQ<T> {
         Node temp = root[1];
         root[1] = root[size];
         collection.remove(temp); // 之前忘記把Map裡面的值也remove了
+        collection.put(root[1].item, 1); // 忘記這行一直出現 NullPointerException
         root[size] = null;
         size -= 1;
         sink(1);
@@ -149,7 +150,6 @@ public class ArrayHeapMinPQ<T> {
     }
 
     private boolean greater(int i, int j) {
-        // 因為一直出現NullPointerException 所以把 > 改成 >= 就可以了 但是explored state 也變少了
-        return root[i].compareTo(root[j]) >= 0;
+        return root[i].compareTo(root[j]) > 0;
     }
 }
