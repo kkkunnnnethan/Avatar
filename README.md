@@ -20,10 +20,13 @@ You have to add all the .jar files inside javalib repository into your SDKs in o
 
 In the beginning, you are locked in a dark room full of alleys. You have to find the door and get your way out.
 <br/>
+
 You can either try to find the door directly without light source or find the light source first to get a better view.
 <br/>
+
 Always be aware of that there is a monster chasing after you.
 <br/>
+
 Now you can go and have fun!
 
 ---
