@@ -8,7 +8,7 @@
 
 You have to add all the .jar files inside javalib directory into your SDKs in order to run the packages that I imported from [here](https://introcs.cs.princeton.edu/java/stdlib/).
 
-* For IntelliJ
+> **For IntelliJ**
 > **File-> Project Structure-> Platform Settings-> SDKs**
 (Simply press plus buttom and choose those files.)
 
